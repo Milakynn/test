@@ -1,21 +1,36 @@
 body {
-    background-color: beige;
-    margin: 0px;
+    /* background-color: beige; */
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+.banner {
     background-color: chocolate;
     text-align: center;
 }
 
-header h1 {
-    margin: 0px;
+.Logo {
+    width: 100px;
+    padding: 15px;
 }
 
-.Logo {
-    width: 50px;
-    padding: 15px;
+.header {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #666666;
+    font-size: 32px;
+    justify-self: end;
+    display: none;
 }
 
 .active {
@@ -23,10 +38,10 @@ header h1 {
 }
 
 .main-navigation {
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-align: left;
     align-items: center;
     /* overflow: hidden; */
@@ -40,14 +55,14 @@ header h1 {
     color: chocolate;
     text-decoration: none;
     /* display: block; */
-    padding: 15px;
+    padding: 0.5em 1em;
     /* float: left; */
 
 }
 
 .main-navigation a:hover {
     cursor: pointer;
-    background-color: aqua;
+    background-color: rosybrown;
     color: yellowgreen;
     font-weight: bold;
 }
@@ -128,7 +143,7 @@ header h1 {
     background: #ccc;
 } */
 
-.tea-content {
+/* .tea-content {
     margin: 35px;
 }
 
@@ -137,17 +152,16 @@ footer {
     padding: 10px;
     text-align: center;
     color: white;
-}
+} */
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 600px) {
     .main-navigation a.active:not(:first-child) {display: none;}
     .main-navigation a.icon {
       float: right;
       display: block;
     }
-}
 
-@media screen and (max-width: 600px) {
     .main-navigation.responsive {position: relative;}
     .main-navigation.responsive .icon {
       position: absolute;
