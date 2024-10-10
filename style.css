@@ -25,6 +25,8 @@ header h1 {
 .main-navigation {
     background-color: black;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: left;
     align-items: center;
     /* overflow: hidden; */
@@ -37,7 +39,7 @@ header h1 {
 .main-navigation a {
     color: chocolate;
     text-decoration: none;
-    display: block;
+    /* display: block; */
     padding: 15px;
     /* float: left; */
 
@@ -50,8 +52,14 @@ header h1 {
     font-weight: bold;
 }
 
-/* .main-navigation .icon {
+/* .icon {
     display: none;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid;
+    font-size: 32px;
+    justify-self: end;
 } */
 
 .dropbtn {
@@ -131,8 +139,8 @@ footer {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
-    .main-navigation a:not(:first-child) {display: none;}
+@media screen and (max-width: 400px) {
+    .main-navigation a.active:not(:first-child) {display: none;}
     .main-navigation a.icon {
       float: right;
       display: block;
@@ -146,7 +154,7 @@ footer {
       right: 0;
       top: 0;
     }
-    
+
     .main-navigation.responsive a {
       float: none;
       display: block;
