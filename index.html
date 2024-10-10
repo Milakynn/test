@@ -6,6 +6,8 @@
         <link rel="icon" href="Icone-tea.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header>
@@ -14,25 +16,66 @@
             </a>
             <h1>Tea commerce</h1>
         </header>
-        <nav class="main-navigation">
+        <nav class="main-navigation" id="MyTopnav">
+            <a class="nav-logo" href="index.html">
+                <img class="Logo" src="Logo-tea.png" alt="logo of teawear ">
+            </a>
             <a class="active" href="index.html">Home</a>
             <div class="dropdown">
                 <a class="dropbtn" href="tea.html">Tea</a>
                 <nav class="dropdown-menu">
-                    <a href="tea-leaf.html">Tea leaf</a>
-                    <a href="teawears.html">Teawears</a>
+                    <a href="tea-variety.html">Shop by variety</a>
+                    <a href="tea-arrangement.html">Tea arrangement</a>
+                    <a href="tea-set.html">Tea set</a>
+                    <a href="Blog-tuto-tea.html">Blog</a>
+                </nav>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="Teawears.html">Teawears</a>
+                <nav class="dropdown-menu">
+                    <a href="collection.html">Collections</a>
+                    <a href="adds-on.html">Add ons</a>
+                    <a href="blog-tuto-brew.html">Tutorials</a>
+                </nav>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="news.html">News</a>
+                <nav class="dropdown-menu">
+                    <a href="new-features.html">New features</a>
+                    <a href="new-arrivals.html">New arrivals</a>
                     <a href="blog.html">Blog</a>
                 </nav>
             </div>
-            <a href="news.html">News</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
+            <a href="Sales.html">Sales</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="about.html">About Us</a>
+                <nav class="dropdown-menu">
+                    <a href="shops.html">Our shops</a>
+                    <a href="career.html">Career</a>
+                    <a href="blog.html">Why us ?</a>
+                </nav>
+            </div>
+            <a href="contact.html">Contact us</a>
+            <a class="split" href="shops.html">Shops</a>
+
+            <button href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+             -->
+            <!-- <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form> -->
         </nav>
 
-        <!-- <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
-        </form> -->
+        
         
         <section class="tea-content">
             <article>
